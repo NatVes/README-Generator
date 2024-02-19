@@ -23,13 +23,14 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'How will this project be used?',        
+        message: 'How will this application be used?',        
     },
     {
         type: 'list',
         name: 'license',
         message: 'What license is required with this project?',
         choices: ['Apache 2.0 License', 'Boost Software License 1.0', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU General Public License v3.0', 'GNU General Public License v2.0', 'GNU Affero General Public License v3.0', 'GNU Lesser General Public License v3.0', 'MIT License', 'Mozilla Public License 2.0', 'The Unlicense', 'N/A'],
+        default: 'MIT License',
     },
     {
         type: 'input',
@@ -39,7 +40,13 @@ const questions = [
     {
         type: 'input',
         name: 'tests',
-        message: 'Provide instruction for testing your application?',
+        message: 'Provide instruction for testing your application?',        
+    },
+    {
+        type: 'input',
+        name: 'testCommand',
+        message: 'What command should be used to run tests?',
+        default: 'npm test',
     },
     {
         type: 'input',

@@ -98,9 +98,11 @@ function generateMarkdown(data) {
 
   ${data.tests}
 
+  To run the tests simply enter \`${data.testCommand}\` in the terminal.
+
   ## Questions
 
-  Should you have any questions please contact me via:
+  If you have any questions or need further assistance with the application, feel free to reach out via GitHub or email:
 
   GitHub - [${data.GitHub}](https://github.com/${data.GitHub})
 
