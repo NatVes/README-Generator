@@ -55,8 +55,8 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    const readme = generateMarkdown(data);
-    fs.writeFile(`./${fileName}.md`, readme, (error) =>
+    const filePath = path.join(__dirname, `${fileName}.md`);
+    fs.writeFile(filePath, generateMarkdown(data), (error) =>
         error ? console.error('Error writing README file: ', error) : console.log('README file generated successfully')
     )    
 }

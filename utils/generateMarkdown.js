@@ -4,7 +4,7 @@ function generateMarkdown(data) {
   let licenseBadgeLink = '';
 
   switch (data.license) {
-    case 'Apache License':
+    case 'Apache 2.0 License':
       licenseBadgePath = 'Apache_2.0-blue';
       licenseBadgeLink = 'https://opensource.org/licenses/Apache-2.0';
       break;
@@ -57,7 +57,7 @@ function generateMarkdown(data) {
       licenseBadgeLink = 'http://unlicense.org/';
       break;
     default:
-      licenseBadgePath = 'license-blue';
+      licenseBadgePath = 'N/A-blue';
       licenseBadgeLink = 'Unknown';
   }
 
@@ -100,9 +100,11 @@ function generateMarkdown(data) {
 
   ## Questions
 
-  [${data.GitHub}](https://github.com/${data.GitHub})
+  Should you have any questions please contact me via:
 
-  [${data.email}](mailto:${data.email})`;
+  GitHub - [${data.GitHub}](https://github.com/${data.GitHub})
+
+  Email - [${data.email}](mailto:${data.email})`;
 }
 
 module.exports = generateMarkdown;
