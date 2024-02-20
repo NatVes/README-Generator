@@ -16,7 +16,7 @@ To install this application, simply clone the repository and run `npm install` t
 
 After installation, run the command `node index.js` to start the application. Follow the prompts to enter information about your project. Once all prompts are completed, a professional README.md file will be generated in the root directory of your project.
 
-The following [walkthrough video](...) demonstrates the functionality of the application.
+The following [walkthrough video](https://youtu.be/_p2UB7m8zAE) demonstrates the functionality of the application.
 
 ## Technologies Used
 
